@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Float</title>
+	<style type="text/css">
+		.clearfix:before,
+		.clearfix:after {
+			content: "";
+			display: table;
+		}
+		.clearfix:after {
+			clear: both;
+		}
+		.parent {
+			padding: 10px;
+			background-color: yellow;
+		}
+		.child {
+			height: 50px;
+			width: 50px;
+			margin: 10px;
+			background-color: red;
+		}
+		.left {
+			float: left;
+		}
+		.right {
+			float: right;
+		}
+	</style>
+</head>
+<body>
+	<div class="parent clearfix">
+		<div class="child left">A</div>
+		<div class="child right">B</div>
+	</div>
+</body>
+</html>
